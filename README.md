@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- # [Pascargo](https://futurspace-teamdev2.vercel.app/) -->
+# [Pascargo](https://github.com/ayra-sa/pascargo-team3)
+
+This is Pascargo Website with Next Js.
+
+<!-- [![Skateshop13](./public/images/ss.jpg)](https://futurspace-teamdev2.vercel.app/) -->
+
+## Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com)
 
 ## Getting Started
 
