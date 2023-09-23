@@ -8,11 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      container: {
+        center: true,
+        padding: "1.5rem",
+        screens: {
+          "2xl": "1400px"
+        }
       },
+      screens: {
+        xs: "480px",
+        xxs: "380px",
+      },
+      colors: {
+        background: "hsl(var(--background))",
+        primary: "hsl(var(--primary))",
+        border: "hsl(var(--border))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))"
+        },
+      },
+      // backgroundImage: {
+      //   "hero": "url('')"
+      // }
     },
   },
   plugins: [],
