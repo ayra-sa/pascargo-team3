@@ -28,6 +28,10 @@ const config: Config = {
           foreground: "hsl(var(--card-foreground) / <alpha-value>)"
         },
       },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+        poppins: ['var(--font-poppins)'],
+      },
       // backgroundImage: {
       //   "hero": "url('')"
       // }
