@@ -15,8 +15,8 @@ const Button: React.FC<ButtonProps> = ({
   isLoading, 
   ...props }) => {
   const buttonClass = cn(
-    "rounded-md transition duration-200",
-    variant === 'default' && "bg-primary text-white",
+    "rounded-md transition duration-200 font-semibold text-xl",
+    variant === 'default' && "bg-primary text-white hover:bg-primary/70",
     variant === 'secondary' && "bg-white text-primary",
     size === 'default' && "px-[35px] py-[14px]",
     size === 'sm' && "px-7 py-2",

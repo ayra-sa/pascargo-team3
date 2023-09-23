@@ -20,12 +20,12 @@ const config: Config = {
         xxs: "380px",
       },
       colors: {
-        background: "hsl(var(--background))",
-        primary: "hsl(var(--primary))",
-        border: "hsl(var(--border))",
+        background: "hsl(var(--background) / <alpha-value>)",
+        primary: "hsl(var(--primary) / <alpha-value>)",
+        border: "hsl(var(--border) / <alpha-value>)",
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))"
+          DEFAULT: "hsl(var(--card) / <alpha-value>)",
+          foreground: "hsl(var(--card-foreground) / <alpha-value>)"
         },
       },
       // backgroundImage: {

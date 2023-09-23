@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { revalidatePath } from "next/cache";
+import Button from "@/components/button";
 
 export default async function Home() {
   const userValue = cookies().get('user');  

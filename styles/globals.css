@@ -5,11 +5,21 @@
 
 @layer base {
     :root {
-        --background: 224 50% 31% 1;
-        /* --foreground:  */
-        --primary: 224 55% 59% 1;
-        --card: 0 0% 85% 1;
-        --card-foreground: 0 0% 41% 1;
-        --border: 0 0% 85% 1;
+        --background: 224deg 50% 31%;
+        --primary: 224deg 55% 59%;
+        --card: 0 0% 85%;
+        --card-foreground: 0 0% 41%;
+        --border: 0 0% 85%;
+    }
+}
+
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background;
     }
 }
