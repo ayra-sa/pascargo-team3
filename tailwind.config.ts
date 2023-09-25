@@ -32,9 +32,12 @@ const config: Config = {
         sans: ['var(--font-inter)'],
         poppins: ['var(--font-poppins)'],
       },
-      // backgroundImage: {
-      //   "hero": "url('')"
-      // }
+      backgroundImage: {
+        "hero": "url('/images/bg-hero.png')",
+      },
+      boxShadow: {
+        "btn": "0px 4px 4px 0px rgba(0, 0, 0, 0.50)"
+      }
     },
   },
   plugins: [],

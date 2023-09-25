@@ -11,6 +11,10 @@
         --card-foreground: 0 0% 41%;
         --border: 0 0% 85%;
     }
+
+    h1, h2, h3 {
+        @apply font-bold
+    }
 }
 
 
@@ -20,6 +24,6 @@
     }
 
     body {
-        @apply bg-background;
+        @apply bg-background font-poppins;
     }
 }

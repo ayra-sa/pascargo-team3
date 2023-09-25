@@ -15,11 +15,11 @@ const Button: React.FC<ButtonProps> = ({
   isLoading,
   ...props }) => {
   const buttonClass = cn(
-    "rounded-md transition duration-200 font-semibold text-xl font-poppins",
+    "rounded-md transition duration-200 font-semibold text-xl font-poppins shadow-btn",
     variant === 'default' && "bg-primary text-white hover:bg-primary/70",
     variant === 'secondary' && "bg-white text-primary hover:bg-white/90",
     size === 'default' && "px-[35px] py-[14px]",
-    size === 'sm' && "px-7 py-2",
+    size === 'sm' && "px-7 py-2 text-md",
     className
   )
 
