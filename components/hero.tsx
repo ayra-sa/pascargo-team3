@@ -2,20 +2,23 @@
 
 import * as React from 'react'
 import Button from './button'
-import Image from 'next/image'
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
+import { redirect, useRouter } from 'next/navigation'
+import ImageItem from './image-item'
 
 type Props = {}
 
 const Hero = (props: Props) => {
     const [isLogin, setIsLogin] = React.useState(false)
+    const [loading, setLoading] = React.useState(false)
+    const router = useRouter()
 
     const handleClick = () => {
+        setLoading(true)
         if (isLogin) {
-            redirect("/order")
+            router.push("/order")
         } else {
             alert("login dulu oii")
+            redirect("/login")
         }
     }
 
@@ -28,18 +31,15 @@ const Hero = (props: Props) => {
                             <h1 className='text-5xl'>Fast & Trusted <br /> Transportion <br /> Service</h1>
                             <p className='text-xl mt-4 mb-11'>The best service for Transportation Number 1 in Indonesia. Get wonderful quality here.</p>
 
-                            <Button onClick={handleClick}>Book Now</Button>
+                            <Button isLoading={loading} onClick={handleClick}>Book Now </Button>
                         </div>
                     </div>
 
-                    <div className="hidden lg:flex-1">
-                        <Image
+                    <div className="hidden lg:flex-1 lg:block">
+                        <ImageItem
                             src="/images/logo-hero.png"
                             alt='logo'
-                            width={0}
-                            height={0}
-                            sizes='100vw'
-                            className='w-auto h-auto'
+                            className='w-auto'
                         />
                     </div>
                 </div>

@@ -1,27 +1,35 @@
+"use client"
+
 import * as React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import Button from './button'
+import ImageItem from './image-item'
+import { useRouter } from 'next/navigation'
 
 type Props = {}
 
 const Header = (props: Props) => {
+    const router = useRouter()
+
+    const loginClick = () => {
+        router.push("/login")
+    }
+
     return (
-        <header className='fixed w-full bg-[#00000066]'>
+        <header className='fixed w-full bg-[#00000066] z-10'>
             <nav className='container py-3'>
                 <div className="flex justify-between items-center">
-                    <Link href="#">
-                        <Image 
-                            src="/images/logo.png" 
-                            alt='logo' 
-                            width={0} 
-                            height={0}
-                            sizes='100vw'
-                            className='w-full h-auto' 
-                        />
+                    <Link href="/">
+                        <ImageItem src="/images/logo.png" alt='logo' />
                     </Link>
 
-                    <Button variant='secondary' size='sm'>Login</Button>
+                    <Button
+                        onClick={loginClick}
+                        variant='secondary'
+                        size='sm'
+                    >
+                        Login
+                    </Button>
                 </div>
             </nav>
         </header>

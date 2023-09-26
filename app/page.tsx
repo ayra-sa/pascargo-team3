@@ -5,6 +5,8 @@ import { revalidatePath } from "next/cache";
 import Button from "@/components/button";
 import Hero from "@/components/hero";
 import Feature from "@/components/feature";
+import Mission from "@/components/mission";
+import Service from "@/components/service";
 
 export default async function Home() {
   const userValue = cookies().get('user');
@@ -48,6 +50,8 @@ export default async function Home() {
     <>
       <Hero />
       <Feature />
+      <Mission />
+      <Service />
     </>
   )
 

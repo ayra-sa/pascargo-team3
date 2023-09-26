@@ -22,9 +22,9 @@ const Feature = (props: Props) => {
   return (
     <section>
         <div className="container">
-            <div className="flex flex-col items-center py-10 gap-y-20">
+            <div className="flex flex-col md:flex-row items-center py-10 gap-y-20">
                 {data.map((d, i) => (
-                    <div key={i} className='flex items-center flex-col gap-y-3'>
+                    <div key={i} className='flex items-center flex-col md:flex-row md:flex-1 gap-3'>
                         <ImageItem src={d.image} alt={d.title} className='w-auto' />
                         <h2 className='text-base uppercase text-white'>{d.title}</h2>
                     </div>

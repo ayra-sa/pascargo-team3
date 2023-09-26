@@ -27,3 +27,15 @@
         @apply bg-background font-poppins;
     }
 }
+
+
+@layer components {
+    .ellipsis {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        /* text-overflow: ellipsis; */
+        overflow: hidden;
+        white-space: pre-wrap;
+    }
+}
