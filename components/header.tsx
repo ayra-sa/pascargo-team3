@@ -16,7 +16,7 @@ const Header = (props: Props) => {
   };
 
   return (
-    <header className="fixed w-full bg-[#00000066] z-10">
+    <header className="fixed w-full bg-[#00000066] z-10 bg-second-nav">
       <nav className="container py-3">
         <div className="flex justify-between items-center">
           <Link href="/">
